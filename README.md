@@ -1,0 +1,1 @@
+# aiCoverLetterAssistant
