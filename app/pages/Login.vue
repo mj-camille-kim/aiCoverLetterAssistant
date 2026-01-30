@@ -30,10 +30,14 @@
   
   <script setup>
   import { ref } from 'vue'
+  import { useRouter } from 'vue-router'
+  import { useUserStore } from '../stores/user'
   
   const email = ref('')
   const password = ref('')
   const isLoading = ref(false)
+  const router = useRouter()
+  const userStore = useUserStore()
   
   // 로그인 페이지 버튼 클릭 시 동작하는 함수
   const handleLogin = async () => {
@@ -53,10 +57,10 @@
       });
       // 서버 측 응답 추출
       const data = await res.json();
-      console.log(data);
-      if (data.success) {
-        // 메인 페이지로 리다이렉트
-        window.location.href = '/';
+      if (data.success && data.user) {
+        // 사용자 정보를 store에 저장
+        userStore.setUser(data.user);
+        router.push('/');
       }
     } catch (err) {
       console.error(err);

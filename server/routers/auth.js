@@ -59,14 +59,18 @@ router.post('/login', async (req, res) => {
 
     const token = jwt.sign({email, password}, key, { expiresIn: '6h' });
     res.cookie('accessToken', token, {
-        expires: new Date(Date.now() + 6 * 60 * 60 * 1000), // 6시간
-        httpOnly: true, // 클라이언트 측 스크립트에서 쿠키에 접근하지 못하도록 설정
+        expires: new Date(Date.now() + 6 * 60 * 60 * 1000),
+        httpOnly: false,
         secure: false, //배포할 때는 true로 변경
     });
 
     res.status(201).json({ 
       message: '로그인이 완료되었습니다!',
       success: true,
+      user: {
+        email: existingUser.userEmail,
+        nickName: existingUser.nickName
+      }
     });
 
   } catch (error) {

@@ -6,7 +6,8 @@
     "server": "nodemon server/app.js",
     "app": "vite --config vite.config.js",
     "dev": "concurrently \"npm run server\" \"npm run app\"",
-    "migrate": "sequelize-cli db:migrate --config config/config.js"
+    "migrate": "sequelize-cli db:migrate --config config/config.js",
+    "migrate:make": "sequelize-cli migration:generate --name"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.3",
@@ -16,6 +17,7 @@
     "vite": "^7.3.1"
   },
   "dependencies": {
+    "axios": "^1.13.4",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -24,6 +26,7 @@
     "jsonwebtoken": "^9.0.3",
     "lucide-vue-next": "^0.563.0",
     "mysql2": "^3.16.1",
+    "pinia": "^3.0.4",
     "sequelize": "^6.37.7",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4"
