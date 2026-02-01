@@ -18,17 +18,23 @@
         </div>
 
         <div class="experience-grid">
+          <div v-if="isLoading" class="loading-text">데이터를 불러오는 중입니다...</div>
+          
           <div 
-            v-for="item in mockMaterials" 
+            v-else
+            v-for="item in experiences" 
             :key="item.id" 
             class="card material-card"
             @click="selectedExp = item" 
           >
-            <span class="file-source">{{ item.fileName }}</span>
             <h3 class="material-title">{{ item.title }}</h3>
             <div class="tag-group">
               <span v-for="tag in item.tags" :key="tag" class="tag">{{ tag }}</span>
             </div>
+          </div>
+
+          <div v-if="!isLoading && experiences.length === 0" class="empty-state">
+            등록된 경험이 없습니다. 새로운 경험을 추가해보세요!
           </div>
         </div>
       </div>
@@ -51,7 +57,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
 import Sidebar from '../components/Sidebar.vue'
 import ExperienceModal from '../components/ExpModal.vue'
 import ExpDetailModal from '../components/ExpDetailModal.vue'
@@ -60,63 +67,63 @@ const isModalOpen = ref(false)
 const selectedExp = ref(null)
 const isAddModalOpen = ref(false)
 
-// 이미지 기반 가데이터 3개
-const mockMaterials = ref([
-  {
-    id: 1,
-    fileName: '김민지_이력서_자기소개서.pdf',
-    title: '경기도 공공자전거 서비스 종료 원인 분석 프로젝트를 통한 EDA 및 데이터 구조화 역량 강화',
-    tags: ['데이터 분석', '문제 분석', '논리적 사고', '적응력'],
-    details: {
-      situation: '경기도 내 공공자전거 이용률이 전년 대비 30% 감소하며 서비스 종료 위기에 처한 상황이었습니다.',
-      task: '종료 여부 결정을 위해 이용 패턴을 분석하고 정확한 하락 원인을 파악해야 했습니다.',
-      action: '3개년 이용 데이터 50만 건을 수집하여 파이썬으로 EDA를 실시하고, 연령대별/지역별 이용 지도를 시각화했습니다.',
-      result: '핵심 원인이 인프라 노후화와 특정 구간 연계성 부족임을 데이터로 증명하여 전략 보고서를 제출했습니다.',
-      insight: '방대한 데이터를 비즈니스 관점에서 구조화하고 논리적 근거를 도출하는 분석 역량을 키웠습니다.'
-    }
-  },
-  {
-    id: 2,
-    fileName: '김민지_이력서_자기소개서.pdf',
-    title: 'RAG 시스템 기반 HS코드 탐색기 고도화 프로젝트를 통한 임베딩 및 벡터 검색 이해 심화',
-    tags: ['데이터 분석', '프로젝트 관리', '논리적 사고', '문제 분석'],
-    details: {
-      situation: '기존 관세 코드 탐색 시스템의 정확도가 낮아 실무자의 업무 효율이 떨어지는 상태였습니다.',
-      task: 'RAG(검색 증강 생성) 기술을 적용해 유사 코드 추천의 정확도를 90% 이상으로 높이는 것이 목표였습니다.',
-      action: '다양한 임베딩 모델을 테스트하고 벡터 데이터베이스를 최적화하여 검색 성능을 고도화했습니다.',
-      result: '테스트 결과 기존 대비 검색 정확도가 25% 향상되었으며 실무 도입 확정을 이끌어냈습니다.',
-      insight: '최신 AI 기술을 실제 산업 도메인에 적용하는 과정에서의 트러블슈팅 경험을 쌓았습니다.'
-    }
-  },
-  {
-    id: 3,
-    fileName: '김민지_이력서_자기소개서.pdf',
-    title: '교환학생 중 발생한 비상 상황 대처 경험을 통한 회복탄력성 및 문제 해결 능력 함양',
-    tags: ['적응력', '추진력', '문제 분석'],
-    details: {
-      situation: '해외 교환학생 기간 중 숙소 결제 오류로 인해 당일 거처가 불분명해진 비상 상황이었습니다.',
-      task: '낯선 환경에서 침착하게 24시간 이내에 새로운 숙소를 확보하고 학업 스케줄을 유지해야 했습니다.',
-      action: '현지 커뮤니티와 학교 사무실에 즉시 연락을 취하고 가능한 모든 플랫폼을 동원해 대안을 찾았습니다.',
-      result: '당일 내에 안전한 숙소로 재배치되었으며, 이후 비슷한 상황의 동료들을 돕는 매뉴얼을 작성했습니다.',
-      insight: '예기치 못한 위기 앞에서도 당황하지 않고 해결책을 찾아가는 회복탄력성의 중요성을 배웠습니다.'
-    }
-  }
-])
+// 1. 가데이터를 비우고 빈 배열로 초기화
+const experiences = ref([])
+const isLoading = ref(true)
 
-const handleExperienceSubmit = (data) => {
-  console.log('새 경험 등록 데이터:', data)
+const fetchExperiences = async () => {
+  try {
+    isLoading.value = true;
+    const userEmail = JSON.parse(localStorage.getItem("userInfo")).email;
+    
+    // POST로 변경하셨으니 axios.post를 사용해야 합니다.
+    const response = await axios.post("/api/getUserExp", {
+      userEmail: userEmail
+    });
+
+    // 💡 수정 포인트: response.data가 아니라 response.data.data를 가져와야 합니다.
+    // 서버 응답: { success: true, data: [...] } 이기 때문입니다.
+    const rawData = response.data.data; 
+
+    if (Array.isArray(rawData)) {
+      experiences.value = rawData.map(item => ({
+        id: item.id,
+        title: item.title,
+        tags: item.keywords, 
+        details: {
+          situation: item.classifySTARI?.situation || '',
+          task: item.classifySTARI?.task || '',
+          action: item.classifySTARI?.action || '',
+          result: item.classifySTARI?.result || '',
+          insight: item.classifySTARI?.insight || ''
+        }
+      }));
+    } else {
+      console.error('서버에서 온 데이터가 배열 형식이 아닙니다:', rawData);
+    }
+  } catch (error) {
+    console.error('경험 데이터를 가져오는데 실패했습니다:', error);
+  } finally {
+    isLoading.value = false;
+  }
+}
+
+
+onMounted(() => {
+  fetchExperiences()
+})
+
+const handleExperienceSubmit = async (data) => {
+  // 등록 후 목록 새로고침
+  await fetchExperiences()
   isModalOpen.value = false
 }
 
-const handleUpdateExperience = (updatedData) => {
-  // 배열에서 해당 ID를 찾아 데이터 교체 (DB 업데이트 효과)
-  const index = mockMaterials.value.findIndex(item => item.id === updatedData.id);
-  if (index !== -1) {
-    mockMaterials.value[index] = { ...updatedData };
-    console.log('DB 업데이트 완료:', updatedData);
-  }
-  selectedExp.value = null; // 모달 닫기 (또는 유지하고 싶으면 그대로 둠)
-};
+const handleUpdateExperience = async (updatedData) => {
+  // 성공적으로 업데이트되었다면 목록 다시 불러오기
+  await fetchExperiences()
+  selectedExp.value = null
+}
 
 </script>
 
