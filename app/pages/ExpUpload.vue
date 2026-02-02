@@ -46,6 +46,22 @@
             </div>
             <button class="btn-secondary">입력창 열기</button>
           </div>
+
+          <div class="upload-item" @click="router.push('/editor')">
+          <div class="icon-box highlight">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+              <path d="M2 2l7.5 1.5"></path>
+              <path d="M7.5 24l-3-3"></path>
+            </svg>
+          </div>
+          <div class="item-text">
+            <h3>바로 초안 작성</h3>
+            <p>경험 정리 없이 AI와 함께 자소서를 씁니다.</p>
+          </div>
+          <button class="btn-outline">작성 시작</button>
+        </div>
         </div>
       </section>
 
@@ -143,76 +159,143 @@ const handleExperienceSubmit = async (experienceList) => {
 </script>
 
 <style scoped>
+/* 전체 레이아웃 세팅 */
 .upload-page-wrapper {
   display: flex;
   min-height: 100vh;
-  background-color: #fcfcfc;
+  background-color: #f9f9fb; /* 아주 연한 배경색으로 카드 강조 */
 }
 
 .main-content {
   flex: 1;
-  padding: 60px 80px;
-  max-width: 1200px;
+  padding: 60px 50px;
+  max-width: 1400px; /* 3개 카드가 충분히 펼쳐지도록 확장 */
+  margin: 0 auto;
 }
 
 /* 헤더 스타일 */
 .page-header {
   margin-bottom: 50px;
+  text-align: left;
 }
 .page-title {
   font-size: 2.2rem;
   font-weight: 800;
   color: #111;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .page-subtitle {
   color: #666;
   font-size: 1.1rem;
 }
 
-/* 업로드 아이템 스타일 (카드 형태 탈피) */
+/* 3열 카드 그리드 시스템 */
 .upload-section {
   margin-bottom: 60px;
 }
 .action-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr); /* 정확히 3등분 */
+  gap: 24px; /* 카드 사이 간격 */
 }
+
+/* 카드 아이템 스타일 개선 */
 .upload-item {
   display: flex;
+  flex-direction: column; /* 세로 방향으로 요소 나열 */
   align-items: center;
-  padding: 30px;
+  justify-content: space-between; /* 위-중간-아래 간격 최적화 */
+  padding: 50px 30px; /* 카드가 더 커 보이도록 패딩 증가 */
   background: white;
   border: 1px solid #eee;
-  border-radius: 16px;
+  border-radius: 24px; /* 더 부드러운 라운딩 */
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-height: 400px; /* 카드의 세로 크기를 크게 고정 */
+  text-align: center;
 }
+
 .upload-item:hover {
   border-color: #0000FF;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transform: translateY(-10px); /* 더 역동적인 호버 효과 */
+  box-shadow: 0 20px 40px rgba(0,0,255,0.08);
 }
+
+/* 아이콘 박스 크기 확대 */
 .icon-box {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background: #f0f3ff;
-  border-radius: 12px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-bottom: 25px;
 }
-.icon { width: 30px; height: 30px; color: #0000FF; }
-.item-text { flex: 1; text-align: left; }
-.item-text h3 { font-size: 1.2rem; margin-bottom: 5px; }
-.item-text p { font-size: 0.95rem; color: #888; }
-.file-status { display: block; margin-top: 8px; color: #0000FF; font-weight: bold; font-size: 0.85rem; }
 
-/* 버튼 스타일 */
-.btn-primary { background: #0000FF; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; }
-.btn-secondary { background: white; color: #333; border: 1px solid #ddd; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.icon-box.highlight {
+  background: #EBF5FF; /* 세 번째 카드용 포인트 컬러 */
+}
+
+.icon { width: 36px; height: 36px; color: #0000FF; }
+
+/* 텍스트 영역 */
+.item-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-text h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.item-text p {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.6;
+  word-break: keep-all; /* 한글 가독성 향상 */
+}
+
+.file-status {
+  display: block;
+  margin-top: 12px;
+  color: #0000FF;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* 버튼 스타일: 카드 너비에 맞춰 확장 */
+.btn-primary, .btn-secondary, .btn-outline {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px 0;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  /* 작성 시작 버튼의 핵심 스타일 */
+  background-color: white !important;
+  color: #0000FF !important;
+  border: 2px solid #0000FF !important;
+}
+
+/* 마우스를 올렸을 때 효과 (살짝 연한 파란색 배경) */
+.btn-primary:hover, .btn-secondary:hover, .btn-outline:hover {
+  background-color: #f0f3ff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 255, 0.1);
+}
+
+/* 활성화(클릭) 시 효과 */
+.btn-primary:active, .btn-secondary:active, .btn-outline:active {
+  transform: scale(0.98);
+}
 
 /* 결과창 스타일 */
 .result-section {
@@ -220,15 +303,17 @@ const handleExperienceSubmit = async (experienceList) => {
   border-top: 2px solid #eee;
   padding-top: 40px;
 }
+
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
+
 .json-viewer {
   background: #1a1a1a;
-  color: #74f074; /* 터미널 느낌의 연두색 */
+  color: #74f074;
   padding: 30px;
   border-radius: 16px;
   font-family: 'Fira Code', monospace;
@@ -236,18 +321,39 @@ const handleExperienceSubmit = async (experienceList) => {
   overflow-x: auto;
   line-height: 1.6;
 }
-.btn-close { background: none; border: 1px solid #ff4d4f; color: #ff4d4f; padding: 5px 15px; border-radius: 6px; cursor: pointer; }
+
+.btn-close { 
+  background: none; 
+  border: 1px solid #ff4d4f; 
+  color: #ff4d4f; 
+  padding: 8px 20px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+}
 
 /* 로딩 애니메이션 */
-.loading-state { text-align: center; padding: 50px; }
+.loading-state { text-align: center; padding: 100px 0; }
 .spinner {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #0000FF;
+  width: 60px;
+  height: 60px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #0000FF;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
 }
+
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* 반응형 처리 (화면이 작아지면 세로로 정렬) */
+@media (max-width: 1024px) {
+  .action-group {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .upload-item {
+    min-height: auto;
+  }
+}
 </style>

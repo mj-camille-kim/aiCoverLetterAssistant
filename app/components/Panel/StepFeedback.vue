@@ -34,7 +34,7 @@
       </template>
 
       <div v-else class="empty-state">
-        <p>상단 버튼을 눌러 피드백을 시작해 보세요.</p>
+        <p>초안 작성을 완료하고 피드백을 받아 보세요.</p>
       </div>
     </div>
   </div>

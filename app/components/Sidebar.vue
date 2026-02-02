@@ -2,7 +2,7 @@
   <aside :class="['sidebar', { 'is-mini': !isSidebarOpen }]">
     <div class="sidebar-header" @click="isSidebarOpen = !isSidebarOpen" style="cursor: pointer;">
       <div class="logo-circle"></div>
-      <span v-if="isSidebarOpen" class="service-name">서비스이름</span>
+      <span v-if="isSidebarOpen" class="service-name">첫문장</span>
     </div>
 
     <nav class="menu-list">

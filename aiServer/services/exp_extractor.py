@@ -156,7 +156,8 @@ def save_experiences_to_vector_db(userEmail, analysis_result, db_path="../my_chr
     Chroma.from_documents(
         documents=documents,
         embedding=OpenAIEmbeddings(model="text-embedding-3-large"), # 오타 수정
-        persist_directory=db_path
+        persist_directory=db_path,
+        collection_name="user_experiences"
     )
     
     print(f"{len(documents)}개의 경험이 '{db_path}'에 성공적으로 저장되었습니다.")

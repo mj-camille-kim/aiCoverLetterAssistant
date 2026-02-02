@@ -7,7 +7,7 @@
       </header>
 
       <div class="content-body">
-        <h1 class="main-title">서비스이름</h1>
+        <h1 class="main-title">첫문장</h1>
         
         <div class="input-container">
           <input 

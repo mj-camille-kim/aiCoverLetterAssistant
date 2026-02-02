@@ -78,10 +78,12 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import Sidebar from '../components/Sidebar.vue'
 import Panel from './Panel.vue'
 import ExpModal from '../components/ExpModal.vue'
 import ReportModal from '../components/ReportModal.vue'
+import bus from '../util/bus';
 
 // 데이터 상태 관리
 const questions = ref([
@@ -98,8 +100,42 @@ const draftTitle = ref(questions.value[0].title)
 const selectedMaterials = ref([])
 const isModalOpen = ref(false)
 const isReportOpen = ref(true)
-
 const activeQuestion = computed(() => questions.value[activeIndex.value])
+
+let typingInterval = null;
+
+const typeWriter = (text) => {
+  // 1. 기존에 타이핑 중이었다면 중지
+  if (typingInterval) clearInterval(typingInterval);
+  
+  // 2. 현재 선택된 문항의 내용을 비우고 시작 (원치 않으면 이 줄만 삭제)
+  activeQuestion.value.content = '';
+  
+  let index = 0;
+  typingInterval = setInterval(() => {
+    if (index < text.length) {
+      // 3. 현재 활성화된 문항(activeQuestion)의 content에 한 글자씩 추가
+      activeQuestion.value.content += text.charAt(index);
+      index++;
+    } else {
+      clearInterval(typingInterval);
+    }
+  }, 30); // 30ms 속도로 한 글자씩 출력
+};
+
+onMounted(() => {
+  // 4. 버스 신호 수신: 'generateDraft'라는 신호가 오면 typeWriter 함수 실행
+  bus.on('generateDraft', (draftText) => {
+    typeWriter(draftText);
+  });
+});
+
+onUnmounted(() => {
+  // 5. 컴포넌트 종료 시 무전기 끄기 및 인터벌 제거
+  bus.off('generateDraft');
+  if (typingInterval) clearInterval(typingInterval);
+});
+
 
 const materials = ref([
   { id: 1, title: '생성형 AI 프로젝트', description: 'AI 모델 선정 및 자동 배포 시스템 구축' },
