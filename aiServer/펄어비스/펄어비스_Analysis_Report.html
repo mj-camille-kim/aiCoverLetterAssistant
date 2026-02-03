@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>펄어비스 분석 리포트</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        :root {
+            --bg: #f8fafc; --card: #ffffff; --primary: #0f172a; --text: #334155; --text-dim: #64748b; --accent: #0ea5e9; --border: #e0f2fe;
+            --sky-bg: #f0f9ff; --hard-line: #ef4444; --soft-line: #10b981;
+        }
+        body { font-family: 'Pretendard', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 40px; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .header { margin-bottom: 30px; border-bottom: 3px solid var(--accent); padding-bottom: 20px; }
+        .header h1 { margin: 0; color: var(--primary); font-size: 2rem; }
+
+        .tabs { display: flex; gap: 5px; margin-bottom: -1px; }
+        .tab { background: #e0f2fe; border: 1px solid var(--border); border-bottom: none; color: #0369a1; padding: 10px 20px; cursor: pointer; border-radius: 8px 8px 0 0; font-weight: 600; }
+        .tab.active { background: var(--card); color: var(--accent); border-top: 3px solid var(--accent); padding-bottom: 11px; }
+
+        .content-box { background: var(--card); border: 1px solid var(--border); padding: 40px; border-radius: 0 0 12px 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .info-table th { text-align: left; background: var(--sky-bg); color: #0369a1; padding: 12px 15px; border: 1px solid var(--border); font-weight: 600; }
+        .info-table td { padding: 12px 15px; border: 1px solid var(--border); color: var(--text); }
+
+        .jd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .skill-card { padding: 20px; border-radius: 8px; border: 1px solid var(--border); background: #ffffff; }
+        .skill-card.hard { border-left: 5px solid var(--hard-line); }
+        .skill-card.soft { border-left: 5px solid var(--soft-line); }
+
+        .section-card { background: var(--sky-bg); padding: 25px; border-radius: 12px; margin-top: 20px; border: 1px solid var(--border); }
+        .pre-wrap { white-space: pre-wrap; font-size: 0.95rem; }
+
+        .news-item { padding: 15px 0; border-bottom: 1px solid var(--border); }
+        .news-title { font-size: 1.1rem; color: #0284c7; text-decoration: none; font-weight: 700; display: block; margin-bottom: 5px; }
+
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 12px; margin-bottom: 25px; font-size: 1.4rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>펄어비스 기업 분석 보고서</h1></div>
+        <div class="tabs">
+            <button class="tab active" onclick="openTab(event, 'tab1')">기업 개요</button>
+            <button class="tab" onclick="openTab(event, 'tab2')">JD 직무 분석</button>
+            <button class="tab" onclick="openTab(event, 'tab3')">재무 지표</button>
+            <button class="tab" onclick="openTab(event, 'tab4')">최신 뉴스</button>
+        </div>
+        <div class="content-box">
+            <div id="tab1" class="tab-content active">
+                <h2>🏢 기본 기업 정보</h2>
+                <table class="info-table">
+                    <tr><th style="width:180px;">기업명</th><td>(주)펄어비스</td></tr>
+                    <tr><th>업종</th><td>Online Game Software Development and Supply</td></tr>
+                    <tr><th>대표자</th><td>Jin-Young Heo</td></tr>
+                    <tr><th>설립일</th><td>—</td></tr>
+                    <tr><th>주소</th><td>—</td></tr>
+                    <tr><th>홈페이지</th><td><a href="http://www.pearlabyss.com" target="_blank" style="color:var(--accent); font-weight:600;">http://www.pearlabyss.com</a></td></tr>
+                </table>
+                <div class="section-card pre-wrap"><strong>[비전 및 지향점]</strong><br><br>채용 공고 소개<br>
+- (주)펄어비스 ♡관심기업<br>
+- 채용중 22<br>
+- 2026 봄 인턴십 모집<br>
+- 펄어비스<br>
+- 봄 인턴십<br>
+- 모집기간 2026.01.29(목)~2026.02.10(화)<br>
+- ① 마감 15:00<br>
+- 일정 및 전형<br>
+- D-12<br>
+- 홈페이지 지원</div>
+                <div class="section-card pre-wrap" style="margin-top:20px;"><strong>[주요 사업]</strong><br><br>주요 사업내용</div>
+            </div>
+
+            <div id="tab2" class="tab-content">
+                <h2>🎯 '(주)펄어비스:기획 (신입)' 직무 요약</h2>
+                <div class="jd-grid">
+                    <div class="skill-card hard"><strong style="color:var(--hard-line);">HARD SKILL</strong><br><br><div class="pre-wrap">• 게임디자인(기획)**<br>
+• 게임 메커니즘 이해 및 설계 능력<br>
+• 스토리텔링 및 캐릭터 개발 능력<br>
+• 게임 엔진 및 툴 사용 경험 (Unity, Unreal 등)<br>
+• 서비스디자인(웹기획)**<br>
+• UX/UI 디자인 기본 지식<br>
+• 웹 및 모바일 플랫폼 이해<br>
+• 프로토타이핑 툴 사용 경험 (Figma, Sketch 등)</div></div>
+                    <div class="skill-card soft"><strong style="color:var(--soft-line);">SOFT SKILL</strong><br><br><div class="pre-wrap">• 커뮤니케이션 능력**<br>
+• 팀 내 원활한 소통 및 협업 능력<br>
+• 피드백 수용 및 반영 능력<br>
+• 문제 해결 능력**<br>
+• 창의적이고 논리적인 문제 해결 접근법<br>
+• 빠른 학습 및 적응력</div></div>
+                </div>
+                <div class="section-card">
+                    <div class="pre-wrap">### 합격 전략서: 펄어비스 게임디자인 및 서비스디자인 인턴십<br>
+<br>
+---<br>
+<br>
+#### 1. 이유<br>
+<br>
+- <strong>산업 트렌드</strong><br>
+  - 게임 및 서비스 디자인 분야는 빠르게 변화하고 있으며, 최신 기술과 트렌드를 이해하는 것이 중요합니다.<br>
+  <br>
+- <strong>기업 문화</strong><br>
+  - 펄어비스는 혁신과 창의성을 중시하는 기업으로, 도전 정신과 협업 능력을 갖춘 인재를 선호합니다.<br>
+<br>
+#### 2. 시사점<br>
+<br>
+- <strong>포트폴리오 준비</strong><br>
+  - 본인의 디자인 작업물과 프로젝트 경험을 잘 정리하여 포트폴리오로 준비하세요. 특히, 게임 및 서비스 디자인 관련 프로젝트를 강조하세요.<br>
+<br>
+- <strong>네트워킹</strong><br>
+  - 관련 업계의 행사나 세미나에 참석하여 인맥을 넓히고, 펄어비스의 기업 문화를 미리 경험해보세요.<br>
+<br>
+- <strong>자기 개발</strong><br>
+  - 최신 게임 및 서비스 디자인 트렌드를 지속적으로 학습하고, 관련 기술을 꾸준히 연습하세요.<br>
+<br>
+- <strong>지원 마감일 준수</strong><br>
+  - 서류 모집 마감일을 놓치지 않도록 주의하고, 모든 전형 일정을 철저히 준비하세요.<br>
+<br>
+이 전략서를 바탕으로 철저히 준비하여 펄어비스 인턴십에 도전하세요. 성공적인 결과를 기원합니다!</div>
+                </div>
+                <div class="section-card" style="margin-top:20px;">
+                    <div class="pre-wrap"><strong>[인재상/조직 문화]</strong><br><br>인재상/조직 문화<br>
+- <strong>열정과 도전 정신</strong><br>
+- 게임 및 서비스 디자인에 대한 깊은 열정<br>
+- 새로운 기술과 트렌드에 대한 호기심<br>
+- <strong>협업과 팀워크</strong><br>
+- 팀과의 협업을 통해 시너지를 창출할 수 있는 능력</div>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-content">
+                <h2>📊 핵심 재무 지표 요약</h2>
+                <div class="section-card">
+                    <table class="info-table">
+                        <thead>
+                            <tr><th>주요 재무 항목</th><th>금액 (백만 원)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>유동자산</td><td>—</td></tr>
+                            <tr><td>비유동자산</td><td>—</td></tr>
+                            <tr><td><b>자산총계</b></td><td><b>—</b></td></tr>
+                            <tr><td>부채총계</td><td>—</td></tr>
+                            <tr><td>자본총계</td><td>—</td></tr>
+                            <tr><td colspan="2" style="background:#f0f9ff; height:10px;"></td></tr>
+                            <tr><td>매출액</td><td>—</td></tr>
+                            <tr><td>영업이익</td><td>—</td></tr>
+                            <tr><td>당기순이익</td><td>—</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+
+            <div id="tab4" class="tab-content">
+                <h2>📰 최신 뉴스 업데이트</h2>
+                <div class="news-list">
+                    
+                        <div class="news-item">
+                            <a href="https://www.bloter.net/news/articleView.html?idxno=653299" class="news-title" target="_blank">🔗 출시 앞두고 커진 &#x27;붉은사막&#x27; 기대감…펄어비스 PBR 4배 안착</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2026년 02월 02일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 출시 앞두고 커진 &#x27;붉은사막&#x27; 기대감…펄어비스 pbr 4배 안착</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="http://www.econonews.co.kr/news/articleView.html?idxno=425984" class="news-title" target="_blank">🔗 펄어비스, 전날 하락 이어 5% 낙폭…5만3000원선 밑으로</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2026년 02월 03일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 펄어비스, 전날 하락 이어 5% 낙폭…5만3000원선 밑으로</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="https://www.joongangenews.com/news/articleView.html?idxno=492297" class="news-title" target="_blank">🔗 펄어비스 주가, 2월 3일 장중 52,400원 5.24% 하락</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2026년 02월 03일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 펄어비스 주가, 2월 3일 장중 52,400원 5.24% 하락</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="https://www.newsis.com/view/NISX20260129_0003495309" class="news-title" target="_blank">🔗 펄어비스, 채용연계형 봄 인턴십 모집</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2026년 01월 29일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 펄어비스, 채용연계형 봄 인턴십 모집</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="https://www.yna.co.kr/view/AKR20260129105600017?input=1195m" class="news-title" target="_blank">🔗 펄어비스, 2026년도 채용연계형 봄 인턴십 모집</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2026년 01월 29일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 펄어비스, 2026년도 채용연계형 봄 인턴십 모집</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

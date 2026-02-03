@@ -1,0 +1,212 @@
+{
+  "경남제약.json": {
+    "company_name": "경남제약",
+    "company_dir": "D:\\dev\\sesac\\fininsight\\aiCoverLetterAssistant-main\\aiServer\\경남제약",
+    "target_job": "해외영업 (신입)",
+    "target_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?isMypage=no&rec_idx=52983659&recommend_ids=eJxdjsERAzEIA6vJXwgM6J1C3H8Xyd3c2E6eC2LFoODNnG32qvegekTUFPiHM%2B7ByM6wFS%2B6nBvdVD8yUKfswUemMmSsfTjhyw1jXt1LxjTtKslh2s0FQx9%2FNTSOW6P7Ef7yHf4A8Lo3fA%3D%3D&view_type=search&searchword=%EA%B2%BD%EB%82%A8%EC%A0%9C%EC%95%BD&searchType=search&gz=1&t_ref_content=generic&t_ref=search&relayNonce=c6cb50554229752e3cc6&paid_fl=n&search_uuid=1ee668e2-6573-476e-800f-9e1f8ab64065&immediately_apply_layer_open=n#seq=0",
+    "full_content": "온 국민이 사랑하는 비타민 명가,\n경남제약입니다.\n5419\nC레모나\nSINCE 1957\n경남제약, 창립 60주년\n경남제약은 지난 60년간 인류건강'이라는 기업이념을 바탕으로 일반의약품\n(OTC)전문 제약회사로 한길만을 걸어오고 있습니다. 대한민국 1위 비타민C\n레모니'와 대표 무좀약 피엠 인후염 치료제이에프트로키' 등 다수의 OTC\n제품들을 보유하고 있으며 시장을 선도하여 이제 명실상부 OTC 전문\n제약회사로 자리매김하였습니다.\n해외사업팀 채용\n모집부문 및 자격요건\n직무별\n주요업무\n-수출 및 해외사업 업무\n•신규 협력 업체 발굴 및 해외 파트너사 관리\n해외사업팀 해외 전시회 참가, 진행 관련 업무\n・국내/외 계약 및 거래처 관리\n자격요건\n[필수]\n-영어 능통자(원어민 수준)\n・관련 경력 5년 이상자\n-건기식, 제약 경력\n수출 허가 및 공증 진행\n* 전형절차\n직위 근무지 인원\n선임\n서울 0명\n[우대]\n-영어 외 기타 외국어 가능자\nOA 우수자\n서류전형\n면접전형\n면접전형\n최종합격\n(실무면접)\n(임원면접)\n※ 서류전형 합격자에 한하여 개별연락\n* 제출서류\n*\n입사지원서\n*\n경력증명서, 원천징수영수증(최종면접시 제출)\n*최종학교 성적증명서, 졸업증명서, 주민등록등·초본(채용확정 후 제출)\n*관련 자격증 사본(해당자에 한함 - 채용확정 후 제출)\n*\n·기타 입사구비서류(채용확정 후 제출)\n*\n* 접수기한 및 제출방법\n•접수기한: 채용시 마감 (서류전형 결과에 따라 면접을 수시로 진행하고 있으므로 빠른 지원을 부탁드립니다.)\n제출방법 : 사람인 온라인접수\n*지원부문과 근무지 근무가능여부를 반드시 확인하시고 지원해 주시기 바랍니다.\n·장애인 및 국가보훈대상자는 채용시 우대합니다.\n* 기타 자세한 문의사항은 채용담당자(02-3490-4234)에게 연락주시기 바랍니다.",
+    "refined_job_content": "해당 채용 공고에서 '해외영업' 직무와 '신입' 경력에 해당하는 내용은 없습니다. 공고에 명시된 자격요건은 관련 경력 5년 이상자로, 신입 지원자를 대상으로 하지 않습니다."
+  },
+  "경남제약_JD분석.json": {
+    "company_name": "경남제약",
+    "company_dir": "D:\\dev\\sesac\\fininsight\\aiCoverLetterAssistant-main\\aiServer\\경남제약",
+    "target_job": "해외영업 (신입)",
+    "target_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?isMypage=no&rec_idx=52983659&recommend_ids=eJxdjsERAzEIA6vJXwgM6J1C3H8Xyd3c2E6eC2LFoODNnG32qvegekTUFPiHM%2B7ByM6wFS%2B6nBvdVD8yUKfswUemMmSsfTjhyw1jXt1LxjTtKslh2s0FQx9%2FNTSOW6P7Ef7yHf4A8Lo3fA%3D%3D&view_type=search&searchword=%EA%B2%BD%EB%82%A8%EC%A0%9C%EC%95%BD&searchType=search&gz=1&t_ref_content=generic&t_ref=search&relayNonce=c6cb50554229752e3cc6&paid_fl=n&search_uuid=1ee668e2-6573-476e-800f-9e1f8ab64065&immediately_apply_layer_open=n#seq=0",
+    "full_content": "온 국민이 사랑하는 비타민 명가,\n경남제약입니다.\n5419\nC레모나\nSINCE 1957\n경남제약, 창립 60주년\n경남제약은 지난 60년간 인류건강'이라는 기업이념을 바탕으로 일반의약품\n(OTC)전문 제약회사로 한길만을 걸어오고 있습니다. 대한민국 1위 비타민C\n레모니'와 대표 무좀약 피엠 인후염 치료제이에프트로키' 등 다수의 OTC\n제품들을 보유하고 있으며 시장을 선도하여 이제 명실상부 OTC 전문\n제약회사로 자리매김하였습니다.\n해외사업팀 채용\n모집부문 및 자격요건\n직무별\n주요업무\n-수출 및 해외사업 업무\n•신규 협력 업체 발굴 및 해외 파트너사 관리\n해외사업팀 해외 전시회 참가, 진행 관련 업무\n・국내/외 계약 및 거래처 관리\n자격요건\n[필수]\n-영어 능통자(원어민 수준)\n・관련 경력 5년 이상자\n-건기식, 제약 경력\n수출 허가 및 공증 진행\n* 전형절차\n직위 근무지 인원\n선임\n서울 0명\n[우대]\n-영어 외 기타 외국어 가능자\nOA 우수자\n서류전형\n면접전형\n면접전형\n최종합격\n(실무면접)\n(임원면접)\n※ 서류전형 합격자에 한하여 개별연락\n* 제출서류\n*\n입사지원서\n*\n경력증명서, 원천징수영수증(최종면접시 제출)\n*최종학교 성적증명서, 졸업증명서, 주민등록등·초본(채용확정 후 제출)\n*관련 자격증 사본(해당자에 한함 - 채용확정 후 제출)\n*\n·기타 입사구비서류(채용확정 후 제출)\n*\n* 접수기한 및 제출방법\n•접수기한: 채용시 마감 (서류전형 결과에 따라 면접을 수시로 진행하고 있으므로 빠른 지원을 부탁드립니다.)\n제출방법 : 사람인 온라인접수\n*지원부문과 근무지 근무가능여부를 반드시 확인하시고 지원해 주시기 바랍니다.\n·장애인 및 국가보훈대상자는 채용시 우대합니다.\n* 기타 자세한 문의사항은 채용담당자(02-3490-4234)에게 연락주시기 바랍니다.",
+    "refined_job_content": "해당 채용 공고에서 '해외영업' 직무와 '신입' 경력에 해당하는 내용은 없습니다. 공고에 명시된 자격요건은 관련 경력 5년 이상자로, 신입 지원자를 대상으로 하지 않습니다.",
+    "jd_analysis_report": "### 합격 전략서\n\n#### 1. HARD SKILL\n- **영어 능통자**: 원어민 수준의 영어 실력을 갖추고 있어야 해요. 해외 파트너사와의 원활한 소통이 필수!\n- **관련 경력 5년 이상**: 건기식, 제약 분야에서의 경력이 필요합니다. 수출 허가 및 공증 경험도 필수!\n- **OA 능력**: 문서 작업 능력도 중요해요. 엑셀, 파워포인트 등 활용 능력을 어필하세요.\n\n#### 2. SOFT SKILL\n- **커뮤니케이션 능력**: 해외 파트너사와의 협력 및 신규 업체 발굴 시 중요한 스킬!\n- **문제 해결 능력**: 해외 전시회 참가 및 진행 관련 업무에서 발생할 수 있는 문제를 해결할 수 있는 능력.\n- **조직 적응력**: 다양한 문화와 환경에서 적응할 수 있는 유연한 사고방식 필요.\n\n#### 3. 인재상\n- **글로벌 마인드**: 해외사업팀에서 일하는 만큼 글로벌 감각이 뛰어난 인재를 선호합니다.\n- **책임감**: 수출 및 해외사업 업무에서 책임감을 가지고 일할 수 있는 사람.\n- **팀워크**: 팀 내에서 협력하며 시너지를 낼 수 있는 인재.\n\n#### 4. 이유\n- **경남제약의 비전**: 60년간 OTC 전문 제약회사로 자리매김한 경남제약의 해외사업 확장을 함께할 인재를 찾고 있습니다.\n- **성장 기회**: 해외사업팀에서의 경험은 글로벌 시장에서의 커리어 발전에 큰 도움이 될 것입니다.\n\n#### 5. 시사점\n- **빠른 지원**: 서류전형 결과에 따라 면접이 수시로 진행되므로, 빠르게 지원하는 것이 유리합니다.\n- **경력 증명 준비**: 경력증명서와 원천징수영수증 등 필수 서류를 미리 준비해 두세요.\n- **다양한 언어 능력**: 영어 외에 다른 외국어 능력을 갖추고 있다면 큰 장점이 될 것입니다.\n\n이 전략서를 바탕으로 준비를 철저히 하시고, 경남제약의 해외사업팀에서 멋진 커리어를 쌓으시길 바랍니다!"
+  },
+  "경남제약_NEWS.json": {
+    "news_list": [
+      {
+        "title": "SK케미칼, 경남제약과 알레르기 비염 약 ‘노즈알’ 공동 판매",
+        "link": "https://health.chosun.com/site/data/html_dir/2026/02/03/2026020301260.html",
+        "pubDate": "Tue, 03 Feb 2026 09:48:00 +0900",
+        "analysis": {
+          "기업": "경남제약",
+          "제품": "노즈알연질캡슐",
+          "주요성분": "펙소페나딘",
+          "제품특징": [
+            "일반의약품",
+            "알레르기 비염 증상 완화",
+            "기존 항히스타민제보다 졸음 등 진정 작용 발생 빈도 감소",
+            "간에 부담이 적음"
+          ],
+          "공동판매계약": {
+            "계약파트너": "SK케미칼",
+            "역할분담": {
+              "경남제약": "약국 대상 영업·마케팅",
+              "SK케미칼": "유통 플랫폼을 통해 의약품 제공"
+            },
+            "계약목적": "약국 유통·영업 강화 및 비염 치료제 시장 입지 확대"
+          },
+          "시장전망": [
+            "노즈알연질캡슐의 약국 접근성 강화",
+            "비염 치료제 시장에서의 입지 확장"
+          ],
+          "기업견해": "제품 경쟁력을 약국 영업 전문성과 결합하여 효과적인 공급 구조를 마련"
+        }
+      },
+      {
+        "title": "SK케미칼-경남제약, '노즈알' 공동 판매…약국 영업망 강화",
+        "link": "https://www.etnews.com/20260203000170",
+        "pubDate": "Tue, 03 Feb 2026 11:31:00 +0900",
+        "analysis": {
+          "company": "경남제약",
+          "collaboration_with": "SK케미칼",
+          "objective": "공동으로 알레르기 비염 치료제 시장 공략",
+          "product": "노즈알연질캡슐",
+          "key_points": [
+            {
+              "strategy": "SK케미칼과 경남제약 간 공동 판매 계약",
+              "details": "경남제약이 SK케미칼의 '노즈알'에 대한 약국 대상 영업과 마케팅을 전담"
+            },
+            {
+              "distribution_approach": "기존 SK케미칼의 의약품 주문 플랫폼 유통에서 벗어나 경남제약의 영업망 활용",
+              "advantage": "오프라인 약국 판매 강화"
+            },
+            {
+              "market_strengths": [
+                "경남제약의 강력한 약국 영업망",
+                "'레모나'를 포함한 OTC 라인업과 전국 11개 지점의 영업 조직"
+              ]
+            },
+            {
+              "product_characteristics": [
+                "3세대 항히스타민제 Fexofenadine 기반",
+                "낮은 진정 작용 발생 빈도",
+                "빠른 체내 흡수를 위한 액상형 연질캡슐 제형"
+              ]
+            },
+            {
+              "executive_comment": "SK케미칼의 파마사업 대표 박현선은 경남제약의 약국 영업 전문성을 통해 보다 효과적인 공급 구조를 마련하고 시장 입지 확대를 목표로 함."
+            }
+          ]
+        }
+      },
+      {
+        "title": "SK케미칼, 경남제약과 '노즈알' 공동판매…&quot;약국 영업 강화&quot;",
+        "link": "https://view.asiae.co.kr/article/2026020309213667140",
+        "pubDate": "Tue, 03 Feb 2026 09:23:00 +0900",
+        "analysis": {
+          "회사명": "경남제약",
+          "상장정보": {
+            "시장": "코스닥",
+            "종목코드": "053950",
+            "현재가": 622,
+            "전일대비": 7,
+            "등락률": "+1.14%",
+            "거래량": 239717,
+            "전일가": 615,
+            "기준일": "2026.02.03 13:19"
+          },
+          "협력내용": {
+            "협력사": "SK케미칼",
+            "의약품": "노즈알연질캡슐",
+            "기능": "알레르기 비염 치료제",
+            "주성분": "펙소페나딘",
+            "효과": "알레르기 비염 증상 완화",
+            "장점": "졸음 등 진정 작용 발생 빈도가 낮음, 간 부담 적음"
+          },
+          "시장활동": {
+            "영업조직": "전국 11개 지점",
+            "유통망": "폭넓은 약국 유통망",
+            "기존 제품": [
+              "레모나 (비타민C 브랜드)",
+              "자양강장제",
+              "인후염 치료제",
+              "무좀 치료제"
+            ]
+          },
+          "기대효과": "노즈알연질캡슐의 약국 유통 및 영업 강화",
+          "전망": "비염 치료제 시장의 입지 확대",
+          "발표자": "박현선 SK케미칼 파마사업 대표"
+        }
+      },
+      {
+        "title": "SK케미칼, 경남제약과 알레르기 비염 치료제 공동 판매 계약",
+        "link": "https://daily.hankooki.com/news/articleView.html?idxno=1330843",
+        "pubDate": "Tue, 03 Feb 2026 09:30:00 +0900",
+        "analysis": {
+          "company": "SK케미칼",
+          "partner": "경남제약",
+          "product": "노즈알연질캡슐",
+          "productDetails": {
+            "mainIngredient": "펙소페나딘",
+            "formulation": "액상형 연질캡슐",
+            "benefits": "알레르기 비염 증상 완화, 졸음 발생 빈도 낮음"
+          },
+          "agreement": "공동 판매 계약",
+          "roles": {
+            "SK케미칼": "기존 의약품 주문 플랫폼 통한 유통",
+            "경남제약": "약국 대상 영업·마케팅"
+          },
+          "strategicBenefits": {
+            "경남제약": "전국적 영업 조직, 폭넓은 약국 유통망",
+            "SK케미칼": "약국 유통·영업 강화"
+          },
+          "companyProfile": {
+            "경남제약": "일반의약품 마케팅 및 영업 분야에서 경쟁력 보유, 비타민C 브랜드 '레모나', 자양강장제, 인후염 치료제, 무좀 치료제 등 포트폴리오 보유"
+          },
+          "marketImpact": "약국 현장에서의 접근성 강화, 비염 치료제 시장 입지 확대 기대"
+        }
+      },
+      {
+        "title": "SK케미칼 &quot;경남제약과 알레르기 비염 치료제 공동 판매&quot;",
+        "link": "https://www.newsis.com/view/NISX20260203_0003500134",
+        "pubDate": "Tue, 03 Feb 2026 09:35:00 +0900",
+        "analysis": {
+          "company": "경남제약",
+          "context": {
+            "overview": "경남제약은 주로 의약품 및 건강기능식품 등을 제조 및 판매하는 기업으로 잘 알려져 있습니다. 특히 '레모나' 등 비타민 제품이 유명합니다."
+          },
+          "financial_performance": {
+            "recent_performance": "최근 몇 년간 경남제약의 재무 성과는 변동성이 있었습니다. 주력 제품의 판매 증가가 있었으나, 연구 개발 및 마케팅 비용 증가로 인해 영업 이익률이 압박을 받고 있습니다.",
+            "key_metrics": {
+              "revenue": "최근 매출 성장세는 안정적이나 급격한 성장세는 아닙니다.",
+              "profitability": "영업 이익과 순이익은 상대적으로 낮은 수준이나 점진적 개선 중입니다."
+            }
+          },
+          "market_position": {
+            "industry": "경남제약은 경쟁이 치열한 국내 제약 및 건강기능식품 산업에서 중견 수준의 시장 지위를 가지고 있습니다.",
+            "competitive_advantage": "경남제약은 자사의 브랜드 인지도와 오랜 업력을 바탕으로 일정 범위의 충성 고객을 확보하고 있습니다. 하지만 브랜드 다양성과 혁신성 측면에서는 경쟁이 필요한 상황입니다."
+          },
+          "strategic_moves": {
+            "expansion": "경남제약은 해외 시장 진출과 신제품 개발을 통한 포트폴리오 확대를 추진하고 있습니다.",
+            "digital_transformation": "디지털 마케팅 강화 및 온라인 판매 채널 확장을 통해 새 고객층을 유입하려는 전략을 추진 중입니다."
+          },
+          "challenges_and_risks": {
+            "internal": "경남제약은 생산 효율성 개선 및 인건비, 재료비 절감 등의 내부 효율화가 중요한 과제로 남아 있습니다.",
+            "external": "신제품 출시의 불확실성과 경쟁사에 비해 낮은 혁신 속도가 외부 환경에서의 위험 요소로 작용하고 있습니다."
+          },
+          "future_outlook": {
+            "growth_potential": "비타민 및 건강기능식품 시장의 꾸준한 수요 증가 속에서 브랜드 강화 및 제품 다양화를 통해 성장 가능성이 존재합니다.",
+            "strategic_focus": "경남제약은 브랜드 이미지 개선과 동시에 글로벌 시장에서의 경쟁력을 강화하는 데 주력할 것으로 보입니다."
+          }
+        }
+      }
+    ],
+    "analyzed_at": "2026-02-03 13:46:54"
+  },
+  "경남제약_homepage.json": {
+    "summary": {
+      "company": {
+        "industry": "Pharmaceutical Manufacturing",
+        "representatives": [
+          "Kim Seong-gon",
+          "Jo Jung-young"
+        ],
+        "website": "http://www.kyungnampharm.co.kr",
+        "businessActivities": [
+          "Manufacturing and selling pharmaceuticals",
+          "Manufacturing and selling medical equipment"
+        ],
+        "location": {
+          "address": "79, Guryong-ro 4nam-gil, Uiryeong-eup, Uiryeong-gun, Gyeongsangnam-do, South Korea"
+        },
+        "mainProduct": "Lemona Vitamin Supplement",
+        "vision": "Focus on manufacturing and retail of pharmaceuticals such as over-the-counter drugs, herbal medicine, and vitamins."
+      }
+    }
+  }
+}

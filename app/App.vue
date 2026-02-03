@@ -14,13 +14,12 @@ const userStore = useUserStore();
 
 onMounted(() => {
   if (!userStore.user) {
-    const savedUser = localStorage.getItem('userInfo');
-    if (savedUser) {
-      try {
-        userStore.setUser(JSON.parse(savedUser));
-      } catch (error) {
-        console.error(error);
-      }
+    try {
+      const savedUser = localStorage.getItem('userInfo');
+      if (savedUser) userStore.setUser(JSON.parse(savedUser));
+    } catch (e) {
+      console.warn('userInfo 복원 실패:', e);
+      localStorage.removeItem('userInfo');
     }
   }
 });

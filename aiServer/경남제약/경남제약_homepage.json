@@ -1,0 +1,21 @@
+{
+    "summary": {
+        "company": {
+            "industry": "Pharmaceutical Manufacturing",
+            "representatives": [
+                "Kim Seong-gon",
+                "Jo Jung-young"
+            ],
+            "website": "http://www.kyungnampharm.co.kr",
+            "businessActivities": [
+                "Manufacturing and selling pharmaceuticals",
+                "Manufacturing and selling medical equipment"
+            ],
+            "location": {
+                "address": "79, Guryong-ro 4nam-gil, Uiryeong-eup, Uiryeong-gun, Gyeongsangnam-do, South Korea"
+            },
+            "mainProduct": "Lemona Vitamin Supplement",
+            "vision": "Focus on manufacturing and retail of pharmaceuticals such as over-the-counter drugs, herbal medicine, and vitamins."
+        }
+    }
+}

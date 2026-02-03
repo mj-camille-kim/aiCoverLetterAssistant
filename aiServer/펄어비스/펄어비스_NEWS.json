@@ -1,0 +1,161 @@
+{
+    "news_list": [
+        {
+            "title": "출시 앞두고 커진 '붉은사막' 기대감…펄어비스 PBR 4배 안착",
+            "link": "https://www.bloter.net/news/articleView.html?idxno=653299",
+            "pubDate": "Mon, 02 Feb 2026 16:21:00 +0900",
+            "analysis": {
+                "company": "Pearl Abyss",
+                "game_focus": "Crimson Desert",
+                "recent_events": {
+                    "gold_candidate_announcement": "January 21",
+                    "PBR_increase": [
+                        {
+                            "date": "January 28",
+                            "PBR": 4.2
+                        },
+                        {
+                            "date": "January 29",
+                            "PBR": 4.25
+                        },
+                        {
+                            "date": "January 30",
+                            "PBR": 4.36
+                        }
+                    ]
+                },
+                "financials": {
+                    "PBR": {
+                        "trend": "Increased from 2.7 in late September to over 4 in January",
+                        "current": 4.21
+                    }
+                },
+                "market_expectations": "High due to anticipated 'Crimson Desert' release",
+                "game_features": [
+                    "Open-world action adventure",
+                    "Photo-realistic graphics",
+                    "Terrain-based combat interactions",
+                    "Expanded exploration freedom"
+                ],
+                "potential_challenges": [
+                    {
+                        "description": "Sustainability of high PBR post-launch",
+                        "factors": [
+                            "Initial sales performance",
+                            "User engagement and feedback",
+                            "Content appeal",
+                            "Stability of live operations"
+                        ]
+                    },
+                    {
+                        "description": "Market volatility",
+                        "factors": [
+                            "Unstable post-launch performance metrics",
+                            "Potential for rapid PBR adjustment"
+                        ]
+                    }
+                ],
+                "conclusion": "The current value is heavily influenced by market anticipation. The real test lies in post-launch success which will determine whether Pearl Abyss maintains its premium valuation or enters a correction phase. The company's commitment to a high-quality release signals promising prospects but outcomes remain crucial."
+            }
+        },
+        {
+            "title": "펄어비스, 전날 하락 이어 5% 낙폭…5만3000원선 밑으로",
+            "link": "http://www.econonews.co.kr/news/articleView.html?idxno=425984",
+            "pubDate": "Tue, 03 Feb 2026 10:48:00 +0900",
+            "analysis": {
+                "company": "펄어비스",
+                "date": "2023년 10월 3일",
+                "stock_price": {
+                    "current": "5만2200원",
+                    "change_percentage": "-5.61%",
+                    "change_amount": "-3100원"
+                },
+                "recent_trend": {
+                    "start_date": "2023년 9월 22일",
+                    "end_date": "2023년 9월 30일",
+                    "trend": "7거래일 연속 상승"
+                },
+                "recent_drop": {
+                    "date": "2023년 10월 2일",
+                    "drop_percentage": "3.32%"
+                },
+                "market": "코스닥",
+                "note": "이 기사는 이성주 기자가 작성하였으며, 펄어비스 주가는 최근 하락세를 보이고 있음."
+            }
+        },
+        {
+            "title": "펄어비스 주가, 2월 3일 장중 52,400원 5.24% 하락",
+            "link": "https://www.joongangenews.com/news/articleView.html?idxno=492297",
+            "pubDate": "Tue, 03 Feb 2026 09:58:00 +0900",
+            "analysis": {
+                "분석": {
+                    "현재 주가": 52400,
+                    "전일 대비": {
+                        "주가 하락": 2900,
+                        "하락률": 5.24
+                    },
+                    "시가": 57800,
+                    "고가": 57800,
+                    "저가": 51800,
+                    "변동폭": 6000,
+                    "시가총액": 33730,
+                    "코스닥 순위": 24,
+                    "상장 주식수": 64247855,
+                    "외국인 보유 주식수": 3433473,
+                    "외국인 소진율": 5.34,
+                    "PER": 63.52,
+                    "동일 업종 PER": 17.15,
+                    "업종 등락률": -0.56,
+                    "업종 대비 등락률": 5.24,
+                    "거래량": 365784,
+                    "거래대금": 19555000000
+                },
+                "이전 거래일 정보": {
+                    "시가": 56300,
+                    "고가": 59300,
+                    "저가": 55000,
+                    "종가": 55300,
+                    "거래량": 615677
+                }
+            }
+        },
+        {
+            "title": "펄어비스, 채용연계형 봄 인턴십 모집",
+            "link": "https://www.newsis.com/view/NISX20260129_0003495309",
+            "pubDate": "Thu, 29 Jan 2026 15:24:00 +0900",
+            "analysis": {
+                "company": "Pearl Abyss",
+                "news": "Recruitment",
+                "date": "2026",
+                "newsSource": "뉴시스",
+                "event": "Pearl Abyss has announced the commencement of their spring internship recruitment for the year 2026. The internship is designed to be recruitment-linked, potentially leading to full-time employment. The process began today.",
+                "additionalInfo": "Pearl Abyss is a prominent South Korean video game developer known for its successful MMORPG titles. The company is likely leveraging this internship program to attract and recruit skilled talent as part of its long-term growth strategy.",
+                "photoCredit": "Pearl Abyss",
+                "photoRemark": "Resale and database storage of the image provided by Pearl Abyss are prohibited."
+            }
+        },
+        {
+            "title": "펄어비스, 2026년도 채용연계형 봄 인턴십 모집",
+            "link": "https://www.yna.co.kr/view/AKR20260129105600017?input=1195m",
+            "pubDate": "Thu, 29 Jan 2026 13:30:00 +0900",
+            "analysis": {
+                "회사명": "펄어비스",
+                "주요 발표": "2026년 채용연계형 봄 인턴십 모집",
+                "지원 자격": "기졸업자 및 졸업 예정자",
+                "지원서 접수 기간": "이달 29일부터 2월 10일까지",
+                "접수 방법": "펄어비스 채용 홈페이지를 통해",
+                "회사 관계자 발언": "인턴십 운영, 게임동아리 후원, 채용박람회 참가 등 다양한 활동을 통해 우수 게임 인재 확보 계획",
+                "전략적 방향성": [
+                    "우수 인재 확보",
+                    "지속적 인턴십 프로그램 운영",
+                    "산학 협력 강화"
+                ],
+                "추가활동": [
+                    "게임동아리 후원",
+                    "채용박람회 참가"
+                ]
+            }
+        }
+    ],
+    "analyzed_at": "2026-02-03 10:57:15"
+}

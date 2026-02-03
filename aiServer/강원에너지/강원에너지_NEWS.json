@@ -1,0 +1,213 @@
+{
+    "news_list": [
+        {
+            "title": "강원에너지 주가, 2월 3일 장중 16,220원 0.12% 상승",
+            "link": "https://www.job-post.co.kr/news/articleView.html?idxno=205378",
+            "pubDate": "Tue, 03 Feb 2026 10:30:00 +0900",
+            "analysis": {
+                "company_name": "강원에너지",
+                "current_price": 16220,
+                "price_change": 20,
+                "opening_price": 16500,
+                "price_range": {
+                    "low": 16160,
+                    "high": 16690
+                },
+                "price_fluctuation": 530,
+                "trading_volume": 112776,
+                "trading_value": 1844000000,
+                "market_capitalization": 423700000000,
+                "market_rank": 255,
+                "foreign_ownership": {
+                    "percentage": 1.84,
+                    "shares_owned": 481606
+                },
+                "total_shares": 26123038,
+                "industry_average_PER": 71.16,
+                "industry_change_rate": 4.65,
+                "peer_comparison": {
+                    "current_price_trend_relative_to_industry": "lower"
+                },
+                "previous_day_summary": {
+                    "opening_price": 16950,
+                    "high": 17300,
+                    "low": 16110,
+                    "closing_price": 16200,
+                    "trading_volume": 395498
+                }
+            }
+        },
+        {
+            "title": "강원에너지 주가, 강세... 왜?",
+            "link": "https://www.ggilbo.com/news/articleView.html?idxno=1137533",
+            "pubDate": "Thu, 22 Jan 2026 13:36:00 +0900",
+            "analysis": {
+                "company_name": "강원에너지",
+                "stock_performance": {
+                    "current_price": 17100,
+                    "price_change": 3340,
+                    "percentage_change": 24.27,
+                    "timestamp": "2023-12-22T13:33:00"
+                },
+                "industry_trends": {
+                    "kospi": {
+                        "milestone": 5000,
+                        "impact": "Positive sentiment in broader market"
+                    },
+                    "EV_battery": {
+                        "demand_drivers": [
+                            "Expansion in the robot industry",
+                            "Growth in electric vehicle sales"
+                        ],
+                        "analyst_opinions": {
+                            "LS_securities": {
+                                "caution": "Limited actual demand from robot industry",
+                                "comparisons": {
+                                    "robot_batteries": "Approximately 2.5% of BEV battery demand"
+                                }
+                            }
+                        }
+                    }
+                },
+                "external_factors": {
+                    "global_policy": {
+                        "germany_ev_subsidy": {
+                            "total_amount": "30 billion euros",
+                            "duration": "4 years",
+                            "start_date": "2023-01-01",
+                            "types_supported": [
+                                "BEV",
+                                "PHEV",
+                                "EREV"
+                            ],
+                            "subsidy_amount": "3000 to 6000 euros based on criteria"
+                        }
+                    },
+                    "US_market_impact": "Tesla stock rise by 2.91%"
+                },
+                "company_background": {
+                    "history": {
+                        "founded": "1976",
+                        "original_name": "강원보일러제작소",
+                        "name_change": "2021",
+                        "IPO": "2009"
+                    },
+                    "business_segments": {
+                        "EV_battery": {
+                            "products": [
+                                "Battery materials",
+                                "Production equipment"
+                            ],
+                            "technological_capabilities": "Cathode mixing and electrode process solutions"
+                        },
+                        "plant": {
+                            "products": [
+                                "Industrial steam generators",
+                                "Chemical equipment",
+                                "Environmental energy systems"
+                            ]
+                        }
+                    },
+                    "business_strategy": "Turnkey solutions from design to commissioning"
+                },
+                "disclaimer": "The information provided is for reference and is not a recommendation for direct investment. Investment decisions are the responsibility of the individual."
+            }
+        },
+        {
+            "title": "강원에너지 주가, 1월 28일 장중 18,330원 0.11% 상승",
+            "link": "https://www.joongangenews.com/news/articleView.html?idxno=490518",
+            "pubDate": "Wed, 28 Jan 2026 10:18:00 +0900",
+            "analysis": {
+                "company": "강원에너지",
+                "current_price": 18330,
+                "price_change": 20,
+                "percentage_change": 0.11,
+                "opening_price": 18340,
+                "high_price": 18830,
+                "low_price": 18280,
+                "price_range": 550,
+                "upper_limit": 23800,
+                "lower_limit": 12820,
+                "trading_volume": 350979,
+                "trading_value": 649700000,
+                "previous_trading_volume": 1101688,
+                "market_cap": 479100000000,
+                "market_rank": 225,
+                "foreign_investors_shares": 289930,
+                "foreign_ownership_ratio": 1.11,
+                "total_shares": 26123038,
+                "industry_per": 70.55,
+                "industry_growth_rate": 2.09,
+                "company_growth_rate": 0.11,
+                "previous_closing_price": 18310,
+                "previous_opening_price": 19260,
+                "previous_high_price": 19360,
+                "previous_low_price": 18100,
+                "previous_closing_trading_volume": 1101688
+            }
+        },
+        {
+            "title": "[더벨]강원에너지, DL·현대건설 임원 영입해 '플랜트' 쇄신",
+            "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601231409366160102624",
+            "pubDate": "Tue, 27 Jan 2026 07:52:00 +0900",
+            "analysis": {
+                "기업명": "강원에너지",
+                "산업": "에너지 및 전력",
+                "개요": "강원에너지는 친환경 에너지원 개발 및 에너지 효율성 개선 솔루션을 제공하는 기업입니다.",
+                "설립연도": "2005년",
+                "주요 제품 및 서비스": [
+                    "신재생에너지 솔루션",
+                    "에너지 저장장치(ESS)",
+                    "태양광 발전 시스템",
+                    "풍력 발전 시스템"
+                ],
+                "시장 위치": "강원에너지는 국내외 시장에서 에너지 자원 최적화 및 친환경 발전 분야에 중점을 두고 있으며, 정부의 친환경 정책과 연계하여 다수의 프로젝트를 진행 중입니다.",
+                "최근 동향": [
+                    "정부의 '탈탄소 전환' 정책에 부응하여 탄소 배출 저감 기술 개발에 집중",
+                    "신재생에너지 보급 확대를 위한 해외 시장 진출 모색",
+                    "에너지 관리 솔루션 분야에서의 기술 혁신 강화"
+                ],
+                "강점": [
+                    "지속 가능한 에너지 솔루션 제공",
+                    "다양한 친환경 에너지원 활용 기술 보유",
+                    "글로벌 시장에서의 확장 가능성"
+                ],
+                "도전 과제": [
+                    "높은 연구 개발 비용",
+                    "경쟁 심화에 따른 시장 점유율 유지 과제",
+                    "지역 및 국제적인 환경 정책 변화 적응"
+                ]
+            }
+        },
+        {
+            "title": "[기획] 에너지 대전환시대, 강원 동해안의 해법은",
+            "link": "https://www.kwnews.co.kr/page/view/2026012816212448541",
+            "pubDate": "Thu, 29 Jan 2026 00:01:00 +0900",
+            "analysis": {
+                "company": "강원에너지",
+                "industry_analysis": {
+                    "AI_impact": "인공지능(AI)의 발전은 전력 수요를 급격히 증가시키고 있으며, 에너지 인프라는 AI 기술 발전에 필수적인 요소로 부각되고 있습니다. 이는 에너지 인프라의 중요성을 증가시키고 있으며, 강원 동해안의 전력 인프라 문제가 AI 시대의 주요 리스크로 나타나고 있습니다.",
+                    "regional_challenges": {
+                        "neglect_in_policy": "강릉, 동해, 삼척과 같은 강원도 동해안 지역은 충분한 에너지 생산 능력을 보유하고 있음에도 불구, 정부 에너지 정책에서 소외되어 있는 상태입니다.",
+                        "power_infrastructure": "한국전력의 송전망 구축 지연 등으로 인해 전력 생산은 가능하나 송전에는 어려움을 겪고 있는 상황입니다.",
+                        "economic_impact": "강릉에코파워 등 발전소들이 미활용 상태에 있으며, 이로 인해 막대한 경제적 손실이 발생하고 있습니다. 특히 강릉에코파워는 높은 연간 손실을 입고 있습니다."
+                    },
+                    "specific_cases": {
+                        "Gangneung_ECOPower": "강릉에코파워는 4조 5,000억 원의 투자에도 불구하고 송전망 문제로 가동률이 20%에 불과합니다.",
+                        "Doam_Dam": "도암댐은 수질 문제로 발전 기능이 중단되어 있습니다. 기후위기에 따른 가뭄 심화로 댐의 재활용 가능성이 논의되고 있으나, 체계적인 해결책은 미비합니다."
+                    }
+                },
+                "market_trends": {
+                    "global_demand": "국제에너지기구(IEA)는 전 세계 전력 사용량이 2022년 460TWh에서 2026년 1,050TWh로 증가할 것으로 보고 있습니다.",
+                    "data_center_consumption": "AI 특화 데이터센터는 막대한 전력을 소모하며, 2030년까지 데이터센터의 전력 소비량은 현재의 두 배를 초과할 것으로 예상됩니다."
+                },
+                "strategic_recommendations": {
+                    "infrastructure_expansion": "정부와 기업은 송전 인프라 확충과 에너지 생산 시설의 재정비를 통해 전력 공급 불균형 문제를 해결해야 합니다.",
+                    "policy_alignment": "에너지 인프라 정책이 수도권 중심의 계획에서 벗어나 지방의 생산과 소비를 연계하는 전략적 접근이 필요합니다.",
+                    "innovation_in_regional_energy_strategies": "강원도형 에너지 대전환 전략을 구축하여 지역 경제 활성화 및 지속 가능한 발전을 도모해야 합니다."
+                }
+            }
+        }
+    ],
+    "analyzed_at": "2026-02-03 13:30:06"
+}

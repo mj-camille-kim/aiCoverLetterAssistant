@@ -2,13 +2,13 @@
   <aside :class="['sidebar', { 'is-mini': !isSidebarOpen }]">
     <div class="sidebar-header" @click="isSidebarOpen = !isSidebarOpen" style="cursor: pointer;">
       <div class="logo-circle"></div>
-      <span v-if="isSidebarOpen" class="service-name">첫문장</span>
+      <span v-if="isSidebarOpen" class="service-name">서비스이름</span>
     </div>
 
     <nav class="menu-list">
-      <div 
-        v-for="item in menuItems" 
-        :key="item.id" 
+      <div
+        v-for="item in menuItems"
+        :key="item.path"
         class="menu-item"
         :class="{ 'is-active': $route.path === item.path }"
         @click="$router.push(item.path)"
@@ -57,27 +57,27 @@ const handleLogout = () => {
 <style scoped>
 /* 사이드바 스타일 (약간 회색) */
 .sidebar {
-  width: 260px; /* 펼쳐졌을 때 폭 */
+  width: 260px;
   background-color: #f8f9fa;
   border-right: 1px solid #e9ecef;
   display: flex;
   flex-direction: column;
-  transition: width 0.3s ease; /* 폭 변경 애니메이션 */
+  transition: width 0.3s ease;
   position: relative;
   height: 100vh;
 }
 
 .sidebar.is-mini {
-  width: 80px; /* 아이콘만 보일 정도의 폭 */
+  width: 80px;
 }
 
 .sidebar.is-mini .menu-item {
-  justify-content: center; /* 아이콘 중앙 정렬 */
+  justify-content: center;
   padding: 12px 0;
 }
 
 .sidebar.is-mini .menu-icon {
-  margin-right: 0; /* 라벨이 없으므로 마진 제거 */
+  margin-right: 0;
 }
 
 .sidebar.is-mini .sidebar-header,

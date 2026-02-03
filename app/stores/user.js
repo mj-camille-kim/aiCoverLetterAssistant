@@ -4,10 +4,15 @@ const USER_STORAGE_KEY = 'userInfo';
 
 export const useUserStore = defineStore('user', {
   state: () => {
-    const savedUser = localStorage.getItem(USER_STORAGE_KEY);
-    return {
-      user: savedUser ? JSON.parse(savedUser) : null,
-    };
+    let user = null;
+    try {
+      const savedUser = localStorage.getItem(USER_STORAGE_KEY);
+      if (savedUser) user = JSON.parse(savedUser);
+    } catch (e) {
+      console.warn('userInfo 파싱 실패:', e);
+      localStorage.removeItem(USER_STORAGE_KEY);
+    }
+    return { user };
   },
 
   getters: {

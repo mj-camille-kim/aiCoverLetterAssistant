@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>듀링 분석 리포트</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        :root {
+            --bg: #f8fafc; --card: #ffffff; --primary: #0f172a; --text: #334155; --text-dim: #64748b; --accent: #0ea5e9; --border: #e0f2fe;
+            --sky-bg: #f0f9ff; --hard-line: #ef4444; --soft-line: #10b981;
+        }
+        body { font-family: 'Pretendard', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 40px; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .header { margin-bottom: 30px; border-bottom: 3px solid var(--accent); padding-bottom: 20px; }
+        .header h1 { margin: 0; color: var(--primary); font-size: 2rem; }
+
+        .tabs { display: flex; gap: 5px; margin-bottom: -1px; }
+        .tab { background: #e0f2fe; border: 1px solid var(--border); border-bottom: none; color: #0369a1; padding: 10px 20px; cursor: pointer; border-radius: 8px 8px 0 0; font-weight: 600; }
+        .tab.active { background: var(--card); color: var(--accent); border-top: 3px solid var(--accent); padding-bottom: 11px; }
+
+        .content-box { background: var(--card); border: 1px solid var(--border); padding: 40px; border-radius: 0 0 12px 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .info-table th { text-align: left; background: var(--sky-bg); color: #0369a1; padding: 12px 15px; border: 1px solid var(--border); font-weight: 600; }
+        .info-table td { padding: 12px 15px; border: 1px solid var(--border); color: var(--text); }
+
+        .jd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .skill-card { padding: 20px; border-radius: 8px; border: 1px solid var(--border); background: #ffffff; }
+        .skill-card.hard { border-left: 5px solid var(--hard-line); }
+        .skill-card.soft { border-left: 5px solid var(--soft-line); }
+
+        .section-card { background: var(--sky-bg); padding: 25px; border-radius: 12px; margin-top: 20px; border: 1px solid var(--border); }
+        .pre-wrap { white-space: pre-wrap; font-size: 0.95rem; }
+
+        .news-item { padding: 15px 0; border-bottom: 1px solid var(--border); }
+        .news-title { font-size: 1.1rem; color: #0284c7; text-decoration: none; font-weight: 700; display: block; margin-bottom: 5px; }
+
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 12px; margin-bottom: 25px; font-size: 1.4rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>듀링 기업 분석 보고서</h1></div>
+        <div class="tabs">
+            <button class="tab active" onclick="openTab(event, 'tab1')">기업 개요</button>
+            <button class="tab" onclick="openTab(event, 'tab2')">JD 직무 분석</button>
+            <button class="tab" onclick="openTab(event, 'tab3')">재무 지표</button>
+            <button class="tab" onclick="openTab(event, 'tab4')">최신 뉴스</button>
+        </div>
+        <div class="content-box">
+            <div id="tab1" class="tab-content active">
+                <h2>🏢 기본 기업 정보</h2>
+                <table class="info-table">
+                    <tr><th style="width:180px;">기업명</th><td>(주)듀링</td></tr>
+                    <tr><th>업종</th><td>자동차 엔진용 신품 부품 제조업</td></tr>
+                    <tr><th>대표자</th><td>고주형</td></tr>
+                    <tr><th>설립일</th><td>—</td></tr>
+                    <tr><th>주소</th><td>인천 남동구 남동대로 353, 512호 (남촌동,제이케이루체스타)</td></tr>
+                    <tr><th>홈페이지</th><td><a href="http://www.e-during.co.kr" target="_blank" style="color:var(--accent); font-weight:600;">http://www.e-during.co.kr</a></td></tr>
+                </table>
+                <div class="section-card pre-wrap"><strong>[비전 및 지향점]</strong><br><br>채용 공고 소개<br>
+- (주)듀링<br>
+- 관심기업<br>
+- 각 부문별 신입/경력 모집<br>
+- WE ARE WITH YOU<br>
+- 2026<br>
+- 입사지원<br>
+- ㈜듀링 각 부문별 신입/경력 모집<br>
+- (주)듀링의 궁극적 목적은 구성원 가정의 화목입니다.</div>
+                <div class="section-card pre-wrap" style="margin-top:20px;"><strong>[주요 사업]</strong><br><br>주요 사업내용</div>
+            </div>
+
+            <div id="tab2" class="tab-content">
+                <h2>🎯 '(주)듀링:개발 (신입)' 직무 요약</h2>
+                <div class="jd-grid">
+                    <div class="skill-card hard"><strong style="color:var(--hard-line);">HARD SKILL</strong><br><br><div class="pre-wrap">• (JD 분석 내용 참조)</div></div>
+                    <div class="skill-card soft"><strong style="color:var(--soft-line);">SOFT SKILL</strong><br><br><div class="pre-wrap">• (JD 분석 내용 참조)</div></div>
+                </div>
+                <div class="section-card">
+                    <div class="pre-wrap"><strong>합격 전략서</strong><br>
+<br>
+1. <strong>HARD SKILL</strong><br>
+   - <strong>전산 관련 전공자</strong>: 전산 관련 전공을 했다면, 이 점을 적극적으로 어필하세요. 전산 관련 자격증이 있다면 더욱 좋습니다.<br>
+   - <strong>DATABASE 사용 능력</strong>: 데이터베이스 사용 경험을 강조하세요. SQL이나 관련 툴을 다뤄본 경험이 있다면 구체적으로 설명하세요.<br>
+   - <strong>ERP/MES 운영 경험</strong>: ERP나 MES 시스템에 대한 이해도가 있다면, 이를 활용한 프로젝트 경험을 구체적으로 기술하세요.<br>
+<br>
+2. <strong>SOFT SKILL</strong><br>
+   - <strong>능동적 협력 소통</strong>: 팀워크와 소통 능력을 강조하세요. 프로젝트를 진행하며 협업했던 경험을 구체적으로 설명하세요.<br>
+   - <strong>탁월한 혁신</strong>: 문제 해결을 위해 창의적인 접근을 했던 사례를 준비하세요. 새로운 아이디어를 제안하고 실행했던 경험을 어필하세요.<br>
+<br>
+3. <strong>인재상</strong><br>
+   - <strong>함께 성장</strong>: 회사의 &#x27;SUPER&#x27; 가치에 맞춰, 개인의 성장과 팀의 성장을 함께 이루고자 하는 의지를 보여주세요.<br>
+   - <strong>밝고 따뜻한 조직 문화</strong>: 긍정적인 태도와 밝은 성격을 강조하세요. 팀 분위기를 좋게 만들었던 경험을 이야기하세요.<br>
+<br>
+4. <strong>이유</strong><br>
+   - <strong>가정의 화목과 개인 성장 지원</strong>: 듀링의 경영 철학인 가정의 화목과 개인 성장을 중시하는 점이 본인의 가치관과 잘 맞는다고 설명하세요.<br>
+   - <strong>업계 상위 수준의 보상정책</strong>: 성과에 따른 보상과 성과급 지급이 동기부여가 된다는 점을 어필하세요.<br>
+<br>
+5. <strong>시사점</strong><br>
+   - <strong>외국어 능력</strong>: 영어, 일본어 등 외국어 능력이 있다면, 글로벌 환경에서의 경쟁력을 갖추고 있다는 점을 강조하세요.<br>
+   - <strong>교육/훈련 기회 활용</strong>: 회사에서 제공하는 교육과 훈련 기회를 통해 지속적으로 성장하고 싶다는 의지를 보여주세요.<br>
+<br>
+<strong>추가 팁</strong><br>
+- <strong>접수 마감일</strong>: 2026년 2월 4일 수요일까지이므로, 서류 준비를 서둘러야 합니다.<br>
+- <strong>근무지 선택</strong>: 인천, 충남, 베트남 중 선호하는 근무지를 명확히 하세요.<br>
+- <strong>온라인 지원</strong>: 사람인 온라인 입사지원을 통해 지원하므로, 프로필을 최신 상태로 업데이트하세요.<br>
+<br>
+이 전략서를 바탕으로 준비를 철저히 하시고, 듀링의 일원이 되시길 바랍니다! 화이팅!</div>
+                </div>
+                <div class="section-card" style="margin-top:20px;">
+                    <div class="pre-wrap"><strong>[인재상/조직 문화]</strong><br><br>인재상/조직 문화<br>
+- 채용 공고상 기업 비전 및 조직 문화는 공고·홈페이지를 참조해 주세요.</div>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-content">
+                <h2>📊 핵심 재무 지표 요약</h2>
+                <div class="section-card">
+                    <table class="info-table">
+                        <thead>
+                            <tr><th>주요 재무 항목</th><th>금액 (백만 원)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>유동자산</td><td>—</td></tr>
+                            <tr><td>비유동자산</td><td>—</td></tr>
+                            <tr><td><b>자산총계</b></td><td><b>—</b></td></tr>
+                            <tr><td>부채총계</td><td>—</td></tr>
+                            <tr><td>자본총계</td><td>—</td></tr>
+                            <tr><td colspan="2" style="background:#f0f9ff; height:10px;"></td></tr>
+                            <tr><td>매출액</td><td>—</td></tr>
+                            <tr><td>영업이익</td><td>—</td></tr>
+                            <tr><td>당기순이익</td><td>—</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+
+            <div id="tab4" class="tab-content">
+                <h2>📰 최신 뉴스 업데이트</h2>
+                <div class="news-list">
+                    
+                        <div class="news-item">
+                            <a href="http://www.econonews.co.kr/news/articleView.html?idxno=415101" class="news-title" target="_blank">🔗 중기중앙회, &#x27;산업안전상생 컨퍼런스&#x27; 개최...현대하이텍-우신산업- 듀...</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2025년 11월 23일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 중기중앙회, &#x27;산업안전상생 컨퍼런스&#x27; 개최...현대하이텍-우신산업- 듀...</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="http://www.newsprime.co.kr/news/article.html?no=640496" class="news-title" target="_blank">🔗 서산시-㈜에이치브이엠-㈜듀링 487억원 규모 &#x27;충남도 합동 투자협약&#x27; 체...</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2024년 05월 22일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 서산시-㈜에이치브이엠-㈜듀링 487억원 규모 &#x27;충남도 합동 투자협약&#x27; 체...</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="https://www.newsis.com/view/?id=NISX20240522_0002744117&amp;cID=10807&amp;pID=10800" class="news-title" target="_blank">🔗 서산시, 에이치브이엠·듀링 487억 투자 유치 성공</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2024년 05월 22일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 서산시, 에이치브이엠·듀링 487억 투자 유치 성공</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="https://www.gukjenews.com/news/articleView.html?idxno=2925798" class="news-title" target="_blank">🔗 이완섭 서산시장, 투자유치기업 &#x27;㈜풍기산업·㈜듀링&#x27; 방문</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2024년 02월 20일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> 이완섭 서산시장, 투자유치기업 &#x27;㈜풍기산업·㈜듀링&#x27; 방문</div>
+                        </div>
+
+                        <div class="news-item">
+                            <a href="https://www.businesspost.co.kr/BP?command=article_view&amp;num=428253" class="news-title" target="_blank">🔗 [Who Is ?] 문승호 에이치브이엠 대표</a>
+                            <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;">2026년 01월 28일</div>
+                            <div class="pre-wrap" style="color:var(--text); font-size:0.9rem;"><strong>AI 요약:</strong> [who is ?] 문승호 에이치브이엠 대표</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

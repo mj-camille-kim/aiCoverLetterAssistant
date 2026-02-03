@@ -9,7 +9,10 @@ from langchain_community.vectorstores import Chroma
 import os
 from dotenv import load_dotenv
 
-
+# 프로젝트 루트의 .env 로드 (aiServer/services에서 실행해도 동작)
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(_SCRIPT_DIR))  # services -> aiServer -> 프로젝트 루트
+load_dotenv(os.path.join(_PROJECT_ROOT, ".env"))
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
@@ -156,8 +159,7 @@ def save_experiences_to_vector_db(userEmail, analysis_result, db_path="../my_chr
     Chroma.from_documents(
         documents=documents,
         embedding=OpenAIEmbeddings(model="text-embedding-3-large"), # 오타 수정
-        persist_directory=db_path,
-        collection_name="user_experiences"
+        persist_directory=db_path
     )
     
     print(f"{len(documents)}개의 경험이 '{db_path}'에 성공적으로 저장되었습니다.")

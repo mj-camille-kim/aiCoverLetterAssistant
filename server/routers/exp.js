@@ -50,25 +50,28 @@ router.post('/insertExp', async (req, res) => {
 
 router.post("/getUserExp", async (req, res) => {
   const { userEmail } = req.body;
-  
+
+  if (!userEmail) {
+    return res.status(400).json({ success: false, message: 'userEmail이 필요합니다.' });
+  }
+
   try {
-    // 1. 결과 변수명을 'results' 또는 'experiences'로 변경하여 'res'와 구별
     const experiences = await UserExp.findAll({
-      // 2. 반드시 'where' 객체 안에 조건을 넣어야 함
-      where: {
-        userEmail: userEmail
-      }
+      where: { userEmail: userEmail.trim() },
+      raw: true  // 평문 객체로 반환해 프론트에서 안정적으로 사용
     });
 
-    // 3. 응답 객체 'res'를 사용하여 데이터 반환
-    res.status(200).json({ 
+    res.status(200).json({
       success: true,
-      data: experiences
+      data: Array.isArray(experiences) ? experiences : []
     });
   } catch (error) {
     console.error("데이터 조회 중 오류 발생:", error);
-    // 여기서 res는 Express의 응답 객체여야 정상 작동합니다.
-    res.status(500).json({ success: false, message: '서버 내부 오류가 발생했습니다.' });
+    res.status(500).json({
+      success: false,
+      message: '서버 내부 오류가 발생했습니다.',
+      error: process.env.NODE_ENV !== 'production' ? error.message : undefined
+    });
   }
 });
 

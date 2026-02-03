@@ -1,0 +1,22 @@
+{
+    "summary": {
+        "company_name": "K Steel",
+        "industry": "Other Primary Steel Manufacturing",
+        "CEO": "Choi Seok-woo",
+        "website": "http://www.ksteel.co.kr",
+        "business_description": [
+            "Manufacturing of cold-rolled steel sheets and galvanized steel sheets"
+        ],
+        "address": "10, Yeondeok-ro 15beon-gil, Seongsan-gu, Changwon-si, Gyeongsangnam-do",
+        "company_vision": {
+            "main_business": "Processing and sales of cold-rolled coils from POSCO",
+            "main_products": [
+                "Cold-rolled steel sheets",
+                "Pickled coils",
+                "Galvanized steel sheets",
+                "Hot-dip galvanized steel sheets",
+                "Electro-galvanized steel sheets"
+            ]
+        }
+    }
+}

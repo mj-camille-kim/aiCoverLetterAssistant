@@ -5,7 +5,6 @@ import Main from './pages/Main.vue'
 import ExpUpload from './pages/ExpUpload.vue'
 import Editor from './pages/Editor.vue'
 import ExpStore from './pages/ExpStore.vue'
-import MyPage from './pages/MyPage.vue'
 
 const routes = [
   { path: '/', component: Main },
@@ -13,8 +12,7 @@ const routes = [
   { path: '/join', component: Join },
   { path: '/upload', component: ExpUpload },
   { path: '/editor', component: Editor },
-  { path: '/storage', component: ExpStore },
-  { path: '/mypage', component: MyPage}
+  { path: '/storage', component: ExpStore }
 ]
 
 const router = createRouter({

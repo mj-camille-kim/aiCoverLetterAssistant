@@ -1,0 +1,179 @@
+{
+    "news_list": [
+        {
+            "title": "중기중앙회, '산업안전상생 컨퍼런스' 개최...현대하이텍-우신산업- 듀...",
+            "link": "http://www.econonews.co.kr/news/articleView.html?idxno=415101",
+            "pubDate": "Sun, 23 Nov 2025 21:06:00 +0900",
+            "analysis": {
+                "company": "듀링 플러스",
+                "industry": "산업안전",
+                "event": "2025년 산업안전상생 컨퍼런스",
+                "location": "서울 영등포구 중기중앙회 KBIZ홀",
+                "date": "2023년 10월 20일",
+                "organized_by": [
+                    "중소기업중앙회",
+                    "산업안전상생재단"
+                ],
+                "supported_by": [
+                    "고용노동부",
+                    "산업안전보건공단",
+                    "현대차그룹"
+                ],
+                "award": "안전보건공단 이사장상",
+                "competence": "듀링 플러스는 안전보건 분야에서 뛰어난 성과를 인정받아 안전보건공단 이사장상을 수상. 이는 산업 안전과 관련한 기업의 노력이 주목받고 있음을 시사함."
+            }
+        },
+        {
+            "title": "서산시-㈜에이치브이엠-㈜듀링 487억원 규모 '충남도 합동 투자협약' 체...",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=640496",
+            "pubDate": "Wed, 22 May 2024 16:36:00 +0900",
+            "analysis": {
+                "company": "㈜듀링",
+                "industry": "Automobile Parts Manufacturing",
+                "investment_details": {
+                    "location": "서산오토밸리 일반산업단지",
+                    "amount": 2700000000,
+                    "currency": "KRW",
+                    "completion_date": "2027-03",
+                    "facility_size": 2994,
+                    "unit": "sqm",
+                    "employment": {
+                        "new_positions": 32
+                    }
+                },
+                "background": {
+                    "overview": "㈜듀링 is a mid-sized company producing auto parts, including engine and steering components, supplying both domestic and international automakers.",
+                    "financials": {
+                        "annual_revenue": 130000000000,
+                        "currency": "KRW"
+                    },
+                    "recent_activity": {
+                        "investment_2022": 180000000000,
+                        "activities": [
+                            "Completed expansion on remaining land of the Seosan plant.",
+                            "Relocated Incheon plant to Seosan."
+                        ]
+                    }
+                },
+                "economic_impact": {
+                    "production_effect": 480000000000,
+                    "added_value": 105000000000,
+                    "new_jobs": 72,
+                    "description": "The investments are expected to significantly boost the regional economy through enhanced production and job creation."
+                },
+                "strategic_importance": "Particularly noteworthy is ㈜듀링's role in boosting local employment and contributing to the economic vitality of the Seosan region during challenging economic times.",
+                "support_statement": "The local government, led by Mayor 이완섭, is committed to providing necessary administrative and financial support to ensure successful investment completion and business establishment."
+            }
+        },
+        {
+            "title": "서산시, 에이치브이엠·듀링 487억 투자 유치 성공",
+            "link": "https://www.newsis.com/view/?id=NISX20240522_0002744117&cID=10807&pID=10800",
+            "pubDate": "Wed, 22 May 2024 14:07:00 +0900",
+            "analysis": {
+                "company_name": "㈜듀링",
+                "event": "Joint Investment Agreement Ceremony",
+                "date": "2024-05-22",
+                "location": "Chungnam Provincial Office, South Korea",
+                "key_individuals": [
+                    {
+                        "name": "고주형",
+                        "position": "CEO",
+                        "company": "㈜듀링"
+                    },
+                    {
+                        "name": "이완섭",
+                        "position": "Mayor",
+                        "city": "Seosan"
+                    },
+                    {
+                        "name": "문승호",
+                        "position": "CEO",
+                        "company": "㈜에이치브이엠"
+                    }
+                ],
+                "context": "CEO 고주형 of ㈜듀링 participated in a joint investment agreement ceremony with the city of Seosan and ㈜에이치브이엠, represented by CEO 문승호. The event signifies potential investment and collaboration opportunities between the entities involved, suggesting an expansion or development project backed by local government support."
+            }
+        },
+        {
+            "title": "이완섭 서산시장, 투자유치기업 '㈜풍기산업·㈜듀링' 방문",
+            "link": "https://www.gukjenews.com/news/articleView.html?idxno=2925798",
+            "pubDate": "Tue, 20 Feb 2024 16:36:00 +0900",
+            "analysis": {
+                "company": {
+                    "name": "㈜듀링",
+                    "industry": "Automotive Parts Manufacturing",
+                    "founded": 1987,
+                    "headquarters": "Seosan, South Korea",
+                    "products": [
+                        "Automotive engine control systems",
+                        "Electronic communication key components"
+                    ],
+                    "clients": [
+                        "Domestic and international automotive companies",
+                        "Electronic communication companies"
+                    ]
+                },
+                "event": {
+                    "date": "2023-04-20",
+                    "location": "Jigeok-myeon, Auto Valley, Seosan",
+                    "description": "Visit and dialogue session between Seosan Mayor, Lee Wan-seop, and ㈜듀링.",
+                    "purpose": "Strengthen communication with major investment-attracting companies in the region, inspect advanced production facilities.",
+                    "key_persons": [
+                        {
+                            "name": "Lee Wan-seop",
+                            "position": "Mayor of Seosan"
+                        }
+                    ]
+                },
+                "remarks": "The visit highlighted ㈜듀링's advanced technology and quality management systems as a leading automotive parts manufacturer. The Seosan city administration is committed to supporting such promising local enterprises through various initiatives.",
+                "context": {
+                    "related_companies": [
+                        {
+                            "name": "㈜풍기산업",
+                            "industry": "Automotive Parts Manufacturing",
+                            "founded": 1991,
+                            "products": [
+                                "Automotive body",
+                                "Hood"
+                            ],
+                            "clients": [
+                                "Hyundai",
+                                "Kia",
+                                "Renault Samsung"
+                            ]
+                        }
+                    ],
+                    "strategic_initiatives": [
+                        "Establishment of a specialized team for corporate attraction and job creation",
+                        "Approval of three industrial complexes including Daesan Green Complex"
+                    ]
+                },
+                "potential_growth": "High potential for growth owing to technological expertise, strategic location in Seosan's industrial zones, and proactive local government support.",
+                "key_insights": "Seosan City is strategically focusing on attracting and nurturing high-potential manufacturing enterprises to boost local economic activity and generate employment opportunities."
+            }
+        },
+        {
+            "title": "[Who Is ?] 문승호 에이치브이엠 대표",
+            "link": "https://www.businesspost.co.kr/BP?command=article_view&num=428253",
+            "pubDate": "Wed, 28 Jan 2026 07:28:00 +0900",
+            "analysis": {
+                "기업명": "에이치브이엠",
+                "대표이사": "문승호",
+                "사업분야": [
+                    "첨단금속 제조",
+                    "우주·항공 산업"
+                ],
+                "최근활동": {
+                    "일정": "2024년 7월 23일",
+                    "활동": "서산 제2공장 착공식",
+                    "목적": "우주·항공용 첨단금속 제조"
+                },
+                "성장전략": [
+                    "첨단금속 제조 공정 확대",
+                    "우주·항공 산업과의 협력 강화"
+                ]
+            }
+        }
+    ],
+    "analyzed_at": "2026-02-03 10:04:13"
+}
